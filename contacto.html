@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moira Crochet · Contacto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="contacto">
+
+  <main class="wrap contact">
+    <div class="deco" aria-hidden="true">
+      <span class="blob c1">🧸</span>
+      <span class="blob c2">🌻</span>
+      <span class="blob c3">🍀</span>
+      <span class="blob c4">🧶</span>
+      <span class="blob c5">🐰</span>
+    </div>
+    <div class="two">
+      <div class="intro">
+        <h1>¡Hola!</h1>
+        <p>Hacemos piezas a tu medida. Cuéntanos qué quieres: un personaje, unos colores, un tamaño. Te respondemos con el precio y el tiempo de entrega.</p>
+        <p>Trabajamos con amigurumis, llaveros, colgantes y porcelana fría.</p>
+      </div>
+      <form class="form" id="contactForm" novalidate>
+        <label class="field">Nombre<input name="nombre" required></label>
+        <label class="field">Correo<input name="correo" type="email" required></label>
+        <label class="field">¿Qué quieres encargar?<textarea name="mensaje" rows="4" required></textarea></label>
+        <p class="error" id="contactError" role="alert"></p>
+        <button class="btn" type="submit">Enviar mensaje</button>
+        <p class="ok" id="contactOk" role="status"></p>
+      </form>
+    </div>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

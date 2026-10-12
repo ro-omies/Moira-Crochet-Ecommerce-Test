@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moira Crochet · Tienda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="tienda">
+
+  <main class="wrap">
+    <h1 class="page-title">Tienda</h1>
+    <div class="tools">
+      <input type="search" id="search" placeholder="Buscar un producto" aria-label="Buscar producto">
+      <div class="chips" id="chips" role="group" aria-label="Categorías"></div>
+      <select id="sort" aria-label="Ordenar">
+        <option value="">Ordenar</option>
+        <option value="asc">Precio: menor a mayor</option>
+        <option value="desc">Precio: mayor a menor</option>
+      </select>
+    </div>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>No hay productos con esa búsqueda. Prueba otra palabra o cambia de categoría.</p>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
